@@ -1,0 +1,12 @@
+.search-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input {
+  width: 150px;
+}
+
+.show-in-stock-input {
+  margin-left: 0;
+}
