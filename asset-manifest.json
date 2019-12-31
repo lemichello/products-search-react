@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/products-search-react/static/css/main.66b94210.chunk.css",
-    "main.js": "/products-search-react/static/js/main.52279336.chunk.js",
-    "main.js.map": "/products-search-react/static/js/main.52279336.chunk.js.map",
+    "main.css": "/products-search-react/static/css/main.28b72eef.chunk.css",
+    "main.js": "/products-search-react/static/js/main.8a25e76b.chunk.js",
+    "main.js.map": "/products-search-react/static/js/main.8a25e76b.chunk.js.map",
     "runtime-main.js": "/products-search-react/static/js/runtime-main.7db95e7e.js",
     "runtime-main.js.map": "/products-search-react/static/js/runtime-main.7db95e7e.js.map",
     "static/css/2.79ed69b9.chunk.css": "/products-search-react/static/css/2.79ed69b9.chunk.css",
-    "static/js/2.77be37e8.chunk.js": "/products-search-react/static/js/2.77be37e8.chunk.js",
-    "static/js/2.77be37e8.chunk.js.map": "/products-search-react/static/js/2.77be37e8.chunk.js.map",
+    "static/js/2.29c72bc5.chunk.js": "/products-search-react/static/js/2.29c72bc5.chunk.js",
+    "static/js/2.29c72bc5.chunk.js.map": "/products-search-react/static/js/2.29c72bc5.chunk.js.map",
     "index.html": "/products-search-react/index.html",
-    "precache-manifest.eddb1c5a9ff4def8c61499eb304eb25c.js": "/products-search-react/precache-manifest.eddb1c5a9ff4def8c61499eb304eb25c.js",
+    "precache-manifest.27b8b973665b9eef202d357094dc6c68.js": "/products-search-react/precache-manifest.27b8b973665b9eef202d357094dc6c68.js",
     "service-worker.js": "/products-search-react/service-worker.js",
     "static/css/2.79ed69b9.chunk.css.map": "/products-search-react/static/css/2.79ed69b9.chunk.css.map",
-    "static/css/main.66b94210.chunk.css.map": "/products-search-react/static/css/main.66b94210.chunk.css.map",
-    "static/js/2.77be37e8.chunk.js.LICENSE": "/products-search-react/static/js/2.77be37e8.chunk.js.LICENSE",
+    "static/css/main.28b72eef.chunk.css.map": "/products-search-react/static/css/main.28b72eef.chunk.css.map",
+    "static/js/2.29c72bc5.chunk.js.LICENSE": "/products-search-react/static/js/2.29c72bc5.chunk.js.LICENSE",
     "static/media/index.css": "/products-search-react/static/media/icons-20.ca7934b3.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.7db95e7e.js",
     "static/css/2.79ed69b9.chunk.css",
-    "static/js/2.77be37e8.chunk.js",
-    "static/css/main.66b94210.chunk.css",
-    "static/js/main.52279336.chunk.js"
+    "static/js/2.29c72bc5.chunk.js",
+    "static/css/main.28b72eef.chunk.css",
+    "static/js/main.8a25e76b.chunk.js"
   ]
 }
