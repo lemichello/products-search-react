@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/products-search-react/static/css/main.b1c0798e.chunk.css",
+    "main.js": "/products-search-react/static/js/main.ca63eff4.chunk.js",
+    "main.js.map": "/products-search-react/static/js/main.ca63eff4.chunk.js.map",
+    "runtime-main.js": "/products-search-react/static/js/runtime-main.7db95e7e.js",
+    "runtime-main.js.map": "/products-search-react/static/js/runtime-main.7db95e7e.js.map",
+    "static/css/2.79ed69b9.chunk.css": "/products-search-react/static/css/2.79ed69b9.chunk.css",
+    "static/js/2.3dd77000.chunk.js": "/products-search-react/static/js/2.3dd77000.chunk.js",
+    "static/js/2.3dd77000.chunk.js.map": "/products-search-react/static/js/2.3dd77000.chunk.js.map",
+    "index.html": "/products-search-react/index.html",
+    "precache-manifest.4efa1d6616a3a5dbca6504fa1521ff30.js": "/products-search-react/precache-manifest.4efa1d6616a3a5dbca6504fa1521ff30.js",
+    "service-worker.js": "/products-search-react/service-worker.js",
+    "static/css/2.79ed69b9.chunk.css.map": "/products-search-react/static/css/2.79ed69b9.chunk.css.map",
+    "static/css/main.b1c0798e.chunk.css.map": "/products-search-react/static/css/main.b1c0798e.chunk.css.map",
+    "static/js/2.3dd77000.chunk.js.LICENSE": "/products-search-react/static/js/2.3dd77000.chunk.js.LICENSE",
+    "static/media/index.css": "/products-search-react/static/media/icons-20.ca7934b3.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7db95e7e.js",
+    "static/css/2.79ed69b9.chunk.css",
+    "static/js/2.3dd77000.chunk.js",
+    "static/css/main.b1c0798e.chunk.css",
+    "static/js/main.ca63eff4.chunk.js"
+  ]
+}
