@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import './style.css';
+import React, { useEffect, useState } from 'react';
+import { Checkbox, InputGroup } from '@blueprintjs/core';
 
 export const SearchBar = function({ filter }) {
   const [searchValue, setSearchValue] = useState('');
@@ -11,24 +12,20 @@ export const SearchBar = function({ filter }) {
 
   return (
     <div className={'search-bar'}>
-      <input
+      <InputGroup
+        type={'search'}
         className={'search-input'}
-        type="text"
+        leftIcon={'search-text'}
         placeholder={'Search...'}
         value={searchValue}
         onChange={e => setSearchValue(e.target.value)}
-        onBlur={e => setSearchValue(e.target.value)}
       />
-      <label htmlFor="show-stock">
-        <input
-          className={'show-in-stock-input'}
-          type="checkbox"
-          name="show-stock"
-          checked={showInStock}
-          onChange={() => setShowInStock(!showInStock)}
-        />
+      <Checkbox
+        checked={showInStock}
+        onChange={() => setShowInStock(!showInStock)}
+      >
         Only show products in stock
-      </label>
+      </Checkbox>
     </div>
   );
 };
