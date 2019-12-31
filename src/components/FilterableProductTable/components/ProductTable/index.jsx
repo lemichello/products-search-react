@@ -52,7 +52,7 @@ export const ProductTable = function({ products, addProduct }) {
       />
       <NewProductDialog
         isOpen={isOpen}
-        closeDialog={closeDialog}
+        hideDialog={closeDialog}
         confirmDialog={confirmDialog}
       />
     </div>

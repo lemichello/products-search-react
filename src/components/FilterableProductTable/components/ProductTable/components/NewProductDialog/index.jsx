@@ -12,7 +12,7 @@ import {
 
 export const NewProductDialog = function({
   isOpen,
-  closeDialog,
+  hideDialog,
   confirmDialog
 }) {
   const [name, setName] = useState('');
@@ -25,7 +25,7 @@ export const NewProductDialog = function({
     setCategory('');
     setPrice('1');
     setStocked(true);
-    closeDialog();
+    hideDialog();
   };
 
   const addProduct = () => {
@@ -35,7 +35,7 @@ export const NewProductDialog = function({
       price: '$' + price,
       stocked
     });
-    closeDialog();
+    onClose();
   };
 
   const validateProduct = () => {
