@@ -1,3 +1,3 @@
-export default  {
-  apiUrl: 'https://products-search-api.herokuapp.com/api'
+export default {
+  apiUrl: 'http://localhost:3000/api'
 };

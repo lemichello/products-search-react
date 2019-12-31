@@ -15,7 +15,7 @@ export const SearchBar = function({ filter }) {
       <InputGroup
         type={'search'}
         className={'search-input'}
-        leftIcon={'search-text'}
+        leftIcon={'search'}
         placeholder={'Search...'}
         value={searchValue}
         onChange={e => setSearchValue(e.target.value)}
