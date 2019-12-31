@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import "./style.css";
+import React, { useEffect, useState } from 'react';
+import './style.css';
 
 export const SearchBar = function({ filter }) {
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
   const [showInStock, setShowInStock] = useState(false);
 
   useEffect(() => {
@@ -10,18 +10,18 @@ export const SearchBar = function({ filter }) {
   }, [showInStock, searchValue, filter]);
 
   return (
-    <div className={"search-bar"}>
+    <div className={'search-bar'}>
       <input
-        className={"search-input"}
+        className={'search-input'}
         type="text"
-        placeholder={"Search..."}
+        placeholder={'Search...'}
         value={searchValue}
         onChange={e => setSearchValue(e.target.value)}
         onBlur={e => setSearchValue(e.target.value)}
       />
       <label htmlFor="show-stock">
         <input
-          className={"show-in-stock-input"}
+          className={'show-in-stock-input'}
           type="checkbox"
           name="show-stock"
           checked={showInStock}

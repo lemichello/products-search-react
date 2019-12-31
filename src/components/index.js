@@ -1,10 +1,10 @@
-import React from "react";
-import "./style.css";
-import { FilterableProductTable } from "./FilterableProductTable";
+import React from 'react';
+import './style.css';
+import { FilterableProductTable } from './FilterableProductTable';
 
 function App() {
   return (
-    <div className={"app"}>
+    <div className={'app'}>
       <FilterableProductTable />
     </div>
   );
