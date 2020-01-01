@@ -39,7 +39,7 @@ export const NewProductDialog = function({
   };
 
   const validateProduct = () => {
-    return !(name && category && price);
+    return name && category && price > 0;
   };
 
   return (
@@ -95,7 +95,7 @@ export const NewProductDialog = function({
           <Button
             intent={'success'}
             onClick={addProduct}
-            disabled={validateProduct()}
+            disabled={!validateProduct()}
           >
             Confirm
           </Button>
