@@ -11,10 +11,18 @@ export const FilterableProductTable = function() {
 
   useEffect(() => {
     (async function fetchProducts() {
-      let resp = await axios.get(`${config.apiUrl}/product`);
+      try {
+        let resp = await axios.get(`${config.apiUrl}/product`);
 
-      setProducts(resp.data);
-      setFilteredProducts(resp.data);
+        setProducts(resp.data);
+        setFilteredProducts(resp.data);
+      } catch (e) {
+        DefaultToaster.show({
+          message: 'Cannot get products',
+          intent: 'danger',
+          icon: 'error'
+        });
+      }
     })();
   }, []);
 
@@ -34,14 +42,22 @@ export const FilterableProductTable = function() {
   let addProduct = useCallback(
     product => {
       (async function addProduct() {
-        let resp = await axios.post(`${config.apiUrl}/product`, product);
+        try {
+          let resp = await axios.post(`${config.apiUrl}/product`, product);
 
-        setProducts(products.concat([resp.data]));
-        DefaultToaster.show({
-          message: `Successfully added ${product.name}`,
-          intent: 'success',
-          icon: 'saved'
-        });
+          setProducts(products.concat([resp.data]));
+          DefaultToaster.show({
+            message: `Successfully added ${product.name}`,
+            intent: 'success',
+            icon: 'saved'
+          });
+        } catch (e) {
+          DefaultToaster.show({
+            message: 'Cannot add a new product',
+            intent: 'danger',
+            icon: 'error'
+          });
+        }
       })();
     },
     [products]
@@ -50,11 +66,9 @@ export const FilterableProductTable = function() {
   let deleteProduct = useCallback(
     product => {
       (async function deleteProduct() {
-        let resp = await axios.delete(
-          `${config.apiUrl}/product/${product._id}`
-        );
-
-        if (resp.status !== 200) {
+        try {
+          await axios.delete(`${config.apiUrl}/product/${product._id}`);
+        } catch (e) {
           DefaultToaster.show({
             message: 'Cannot delete a product',
             intent: 'danger',
