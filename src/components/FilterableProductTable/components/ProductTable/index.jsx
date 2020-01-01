@@ -3,7 +3,7 @@ import groupBy from 'lodash/groupBy';
 import './style.css';
 import { ProductCategoryRow } from './components/ProductCategoryRow';
 import { ProductRow } from './components/ProductRow';
-import { Button } from '@blueprintjs/core';
+import { Button, Tooltip, Position } from '@blueprintjs/core';
 import { NewProductDialog } from './components/NewProductDialog';
 
 export const ProductTable = function({ products, addProduct }) {
@@ -18,12 +18,7 @@ export const ProductTable = function({ products, addProduct }) {
     setIsOpen(false);
   }, []);
 
-  let confirmDialog = useCallback(
-    e => {
-      addProduct(e);
-    },
-    [addProduct]
-  );
+  let confirmDialog = useCallback(e => addProduct(e), [addProduct]);
 
   return (
     <div>
@@ -43,13 +38,15 @@ export const ProductTable = function({ products, addProduct }) {
           </tbody>
         ))}
       </table>
-      <Button
-        className={'mt-8'}
-        icon={'add'}
-        text={'New'}
-        intent="primary"
-        onClick={openDialog}
-      />
+      <Tooltip content={'Add a new Product'} position={Position.BOTTOM}>
+        <Button
+          className={'mt-8'}
+          icon={'add'}
+          text={'New'}
+          intent="primary"
+          onClick={openDialog}
+        />
+      </Tooltip>
       <NewProductDialog
         isOpen={isOpen}
         hideDialog={closeDialog}

@@ -91,8 +91,11 @@ export const NewProductDialog = function({
       </div>
       <div className={Classes.DIALOG_FOOTER}>
         <div className={Classes.DIALOG_FOOTER_ACTIONS}>
-          <Button onClick={onClose}>Close</Button>
+          <Button intent={'warning'} icon={'cross'} onClick={onClose}>
+            Close
+          </Button>
           <Button
+            icon={'confirm'}
             intent={'success'}
             onClick={addProduct}
             disabled={!validateProduct()}
