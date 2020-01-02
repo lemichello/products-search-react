@@ -46,7 +46,6 @@ export const NewProductDialog = function({
     <Dialog
       icon={'plus'}
       title={'New Product'}
-      canOutsideClickClose={false}
       isOpen={isOpen}
       onClose={onClose}
     >
